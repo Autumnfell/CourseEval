@@ -1,9 +1,20 @@
 Rails.application.routes.draw do
+  get 'sessions/new'
+
+  post 'sessions/create'
+
+  get 'applicants/new'
+
+  post 'applicants/create'
+  
+ 
+
+  resources :reviews
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'movies#index'
+  root 'applicants#new'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

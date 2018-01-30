@@ -1,19 +1,22 @@
 -#  This file is app/views/movies/index.html.haml
-%h1 All Movies
+
+%h1 全部课程
 
 %table#movies
   %thead
     %tr
-      %th Movie Title
-      %th Rating
-      %th Release Date
-      %th More Info
+      %th 课程列表
+      %th 学分
+      %th 课时
+      %th 评分
+      %th 详细信息及评价
   %tbody
     - @movies.each do |movie|
       %tr
-        %td= movie.title 
-        %td= movie.rating
-        %td= movie.release_date
-        %td= link_to "More about #{movie.title}", movie_path(movie)
+        %td= movie.title
+        %td= movie.credit
+        %td= movie.classhour
+        %td= movie.rating.round(1)
+        %td= link_to "关于#{movie.title}", movie_path(movie)
 
-= link_to 'Add new movie', new_movie_path
+= link_to '添加新课程', new_movie_path

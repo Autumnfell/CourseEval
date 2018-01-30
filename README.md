@@ -1,14 +1,14 @@
 # RottenPotatoes demo app: getting started
 
 This app is associated with the free [online
-course](http://www.saas-class.org) and (non-free)
+movie](http://www.saas-class.org) and (non-free)
 [ebook](http://www.saasbook.info) Engineering Software as a Service.
 
 To get started:
 
 0. [Setup a Cloud9
-environment](https://github.com/saasbook/courseware/wiki/Setting-up-Cloud9)
-for the course.
+environment](https://github.com/saasbook/movieware/wiki/Setting-up-Cloud9)
+for the movie.
 
 0. Fork this repo to your GitHub account, then in your Cloud9 terminal, type the following command to clone your fork to your development workspace:
 
